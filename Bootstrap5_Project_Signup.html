@@ -26,10 +26,7 @@
         </li>
                
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      
     </div>
   </nav>
 
@@ -45,27 +42,33 @@
 
   <form class="signupform" method="get">
 
-    <input type="text" placeholder="First Name:" value="">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">First Name</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Noel Amador">
+    </div>
 
-    <p></p>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Questions or Concerns?</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  
+    </div>
 
-    <textarea placeholder="Any questions or concerns?"></textarea>
-
-    <p></p>
-
-    <input type="email" placeholder="Email: " value="">
-
-    <p></p>
-
-    <label id=""placeholder>Do you approve of this website?</label>
-    <select id="placeholder">
-      <option value=""></option>
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-
-   <p></p>
-    <input type="submit" value="Submit">
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Do you approve of this website?
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Yes</a></li>
+        <li><a class="dropdown-item" href="#">No</a></li>
+        <li><a class="dropdown-item" href="#">Maybe</a></li>
+      </ul>
+      <br></br>
+    </div>
+    <input type="submit" value="Log In">
   </form>
 </div>
 </div>
